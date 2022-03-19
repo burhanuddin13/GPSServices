@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/Sign"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:src="@drawable/aii"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32sp"
+        android:layout_marginEnd="32sp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32sp"
+            android:layout_marginLeft="32sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="32sp"
+            android:layout_marginRight="32sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10sp"
+                android:ems="6"
+                android:fontFamily="@font/baumans"
+                android:paddingTop="8sp"
+                android:paddingBottom="8sp"
+                android:text="Latitude: "
+                android:textColor="@color/foreground"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtLatitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10sp"
+                android:ems="6"
+                android:fontFamily="@font/berkshire_swash"
+                android:paddingStart="20sp"
+                android:paddingTop="8sp"
+                android:paddingEnd="10sp"
+                android:paddingBottom="8sp"
+                android:text="@string/waiting"
+                android:textColor="@color/foreground"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32sp"
+            android:layout_marginLeft="32sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="32sp"
+            android:layout_marginRight="32sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10sp"
+                android:ems="6"
+                android:fontFamily="@font/baumans"
+                android:paddingTop="8sp"
+                android:paddingBottom="8sp"
+                android:text="Longitude: "
+                android:textColor="@color/foreground"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtLongitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10sp"
+                android:ems="6"
+                android:fontFamily="@font/berkshire_swash"
+                android:paddingStart="20sp"
+                android:paddingTop="8sp"
+                android:paddingEnd="10sp"
+                android:paddingBottom="8sp"
+                android:text="@string/waiting"
+                android:textColor="@color/foreground"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFetchLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32sp"
+            android:background="@drawable/round_button"
+            android:text="@string/fetch"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btnViewMaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:background="@drawable/round_button"
+            android:text="@string/viewMap"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

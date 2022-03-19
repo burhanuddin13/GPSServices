@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GPS Services</string>
+    <string name="fetching">Fetching…</string>
+    <string name="fetch">Fetch Last Known Location</string>
+    <string name="viewMap">View on Google Maps</string>
+    <string name="valueNotFound">Value Not Found</string>
+</resources>
